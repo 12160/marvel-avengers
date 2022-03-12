@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+  <style>
+    .home {
+      color: black;
+      font-size: 3vw;
+      margin-left: 2vw;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: times new roman;
+    }
+
+    .all {
+      text-align: center;
+    }
+
+    .all h1 {
+      margin: 3vw;
+      font-size: 4vw;
+    }
+
+    .both {
+      margin: 4vw;
+    }
+
+    .center,
+    .typed {
+      font-size: 3vw;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .size {
+      margin: 3vw;
+      height: 25vw;
+      width: 25vw;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="/index.html" class="home"><span class="material-icons">
+      arrow_back
+    </span></a>
+  <div class="all">
+    <h1 class="center" id="h1">Gallery</h1>
+    <div class="both">
+      <span class="center">Avengers Quotes :<span class="typed"></span></span>
+    </div>
+    <script src="typed.js"></script>
+    <script>
+      var typed = new Typed('.typed', {
+        strings: ["“Avengers, assemble!”",
+      "“I still believe in heroes...”", "“I am Iron Man”", "“I am Inevitable”", "“I love you 3000”"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+      });
+    </script>
+    <div class="flex">
+      <img src="Art.jpeg" class="size">
+      <img src="Captain.jpeg" class="size">
+      <img src="Iron.jpeg" class="size">
+    </div>
+    <div class="flex">
+      <img src="Thor.jpeg" class="size">
+      <img src="Hulk.jpeg" class="size">
+      <img src="Spider.jpeg" class="size">
+    </div>
+    <div class="flex">
+      <img src="age.jpeg" class="size">
+      <img src="Infinity.jpeg" class="size">
+      <img src="End game.jpeg" class="size">
+    </div>
+  </div>
+</body>
+
+</html>
